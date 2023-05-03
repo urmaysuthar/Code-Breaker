@@ -9,8 +9,7 @@ var current_attempt_id;
 var start = new Date();
 var btn_initial_top;
 var url = "http://indigo.eecs.yorku.ca:3000/post";
-    //next lab, when you are in Part2 of the project (server side coding), you
-	//shoudl comeback here and change the url to localhost.
+    
 var myName;
 
 window.onload = function()
@@ -64,7 +63,7 @@ function createGameBoard(){
         var newDiv = document.createElement("div");
         $(newDiv).attr("id", "attempt"+i);
         $(newDiv).attr("class", "attempt");
-		// set its id and class. Hint: to set its class, you can write: $(newDiv).attr("class", "attempt");
+		// set its id and class. 
 		//...
         //...
         
@@ -76,10 +75,7 @@ function createGameBoard(){
         //...
 		// then add 5 images including ids and classes. The img source could be empty or could be the hole.png
         for (var j = 1; j <= CODE_LENGTH; j++){
-			//...
-			//...
-			//...
-			//...
+			
             var newImg = document.createElement("img");
             $(newImg).attr("src","/images/hole.png");
             $(newImg).attr("id","attempt"+i+"_"+j);
@@ -94,12 +90,7 @@ function createGameBoard(){
         var newSpan = document.createElement("span");
         $(newSpan).attr("id", "attempt"+i+"result");
         $(newDiv).append(newSpan);
-
-		//...
-		//...
-		//...
-
-		// append each div to the game board		
+	
 		$("#gameboard").append(newDiv);
     }
    
@@ -119,11 +110,6 @@ function createGameBoard(){
 	// create 8 img elements and 
 	// show each of the 8 marbles images with shadow from the images folder, also set their id and event handler 
     for (var i = 1; i <= NUM_BALLS; i++){
-        //...
-		//...
-		//...
-        // set onclick event handler and pass event.data.id as a parameter
-
         var newImg = document.createElement("img");
         $(newImg).attr("src","./images/shadow_ball_"+i+".png");
         $(newImg).attr("id","shadow"+i);
